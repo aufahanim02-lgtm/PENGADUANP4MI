@@ -1,0 +1,197 @@
+
+PENGADUANP4MI/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Auth/
+│   │   │   │   ├── ControllerAuthLogin.php
+│   │   │   │   ├── ControllerAuthUser.php
+│   │   │   │   └── ControllerAuthLogout.php
+│   │   │   │
+│   │   │   ├── Dashboard/
+│   │   │   │   ├── ControllerDashboardAdmin.php
+│   │   │   │   ├── ControllerDashboardPetugas.php
+│   │   │   │   └── ControllerDashboardPengadu.php
+│   │   │   │
+│   │   │   ├── Master/
+│   │   │   │   ├── ControllerUser.php
+│   │   │   │   ├── ControllerPengadu.php
+│   │   │   │   ├── ControllerKategori.php
+│   │   │   │   └── ControllerWilayah.php
+│   │   │   │
+│   │   │   ├── Pengaduan/
+│   │   │   │   ├── ControllerPengaduan.php
+│   │   │   │   └── ControllerBukti.php
+│   │   │   │
+│   │   │   ├── PMI/
+│   │   │   │   └── ControllerPmi.php
+│   │   │   │
+│   │   │   ├── Tindaklanjut/
+│   │   │   │   └── ControllerTindaklanjut.php
+│   │   │   │
+│   │   │   ├── Notifikasi/
+│   │   │   │   └── ControllerNotifikasi.php
+│   │   │   │
+│   │   │   └── Laporan/
+│   │   │       └── ControllerLaporan.php
+│   │   │
+│   │   └── Middleware/
+│   │       └── RoleMiddleware.php
+│   │
+│   └── Models/
+│       ├── ModelUser.php
+│       ├── ModelPengadu.php
+│       ├── ModelKategori.php
+│       ├── ModelWilayah.php
+│       ├── ModelPengaduan.php
+│       ├── ModelPmi.php
+│       ├── ModelBukti.php
+│       ├── ModelTindaklanjut.php
+│       └── ModelNotifikasi.php
+│
+├── bootstrap/
+│   └── app.php
+│
+├── config/
+│   ├── app.php
+│   ├── auth.php
+│   └── database.php
+│
+├── database/
+│   ├── factories/
+│   │
+│   ├── migrations/
+│   │   ├── xxxx_create_user_table.php
+│   │   ├── xxxx_create_pengadu_table.php
+│   │   ├── xxxx_create_kategori_table.php
+│   │   ├── xxxx_create_wilayah_table.php
+│   │   ├── xxxx_create_pmi_table.php
+│   │   ├── xxxx_create_pengaduan_table.php
+│   │   ├── xxxx_create_bukti_table.php
+│   │   ├── xxxx_create_tindaklanjut_table.php
+│   │   └── xxxx_create_notifikasi_table.php
+│   │
+│   └── seeders/
+│       ├── DatabaseSeeder.php
+│       ├── UserSeeder.php
+│       ├── KategoriSeeder.php
+│       └── WilayahSeeder.php
+│
+├── public/
+│   └── assets/
+│       ├── css/
+│       │   └── style.css
+│       ├── js/
+│       │   └── script.js
+│       └── images/
+│           └── logo.png
+│
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│       │
+│       ├── layouts
+│       │   ├── admin
+│       │   │   ├── sidebar.blade.php
+│       │   │   ├── footer.blade.php
+│       │   │   └── navbar.blade.php
+│       │   ├── petugas
+│       │   │   ├── sidebar.blade.php
+│       │   │   ├── footer.blade.php
+│       │   │   └── navbar.blade.php
+│       │   ├── pengadu
+│       │   │   ├── sidebar.blade.php
+│       │   │   ├── footer.blade.php
+│       │   │   └── navbar.blade.php
+│       │   ├── appadmin.blade.php
+│       │   ├── appetugas.blade.php
+│       │   └── apppengadu.blade.php
+│       │
+│       ├── landing/
+│       │   └── home.blade.php
+│       │
+│       ├── auth/
+│       │   ├── login.blade.php
+│       │   └── register.blade.php
+│       │
+│       ├── admin/
+│       │   ├── dashboardadmin.blade.php
+│       │   ├── user/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── pengadu/
+│       │   │   └── index.blade.php
+│       │   ├── Kategori/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── Wilayah/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   ├── edit.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── pengaduan/
+│       │   │   ├── index.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── pmi/
+│       │   │   ├── index.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── tindaklanjut/
+│       │   │   ├── index.blade.php
+│       │   │   └── show.blade.php
+│       │   └── laporan/
+│       │       └── index.blade.php
+│       │
+│       ├── petugas/
+│       │   ├── dashboardpetugas.blade.php
+│       │   ├── pengaduan/
+│       │   │   ├── index.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── tindaklanjut/
+│       │   │   ├── index.blade.php
+│       │   │   ├── create.blade.php
+│       │   │   └── show.blade.php
+│       │   ├── pmi/
+│       │   │   ├── index.blade.php
+│       │   │   └── show.blade.php
+│       │   └── laporan/
+│       │       └── index.blade.php
+│       │
+│       └── pengadu/
+│           ├── dashboard.blade.php
+│           ├── pengaduan/
+│           │   ├── index.blade.php
+│           │   ├── create.blade.php
+│           │   ├── edit.blade.php
+│           │   └── show.blade.php
+│           ├── pmi/
+│           │   ├── index.blade.php
+│           │   ├── create.blade.php
+│           │   └── edit.blade.php
+│           ├── notifikasi/
+│           │   └── index.blade.php
+│           └── profil/
+│               └── edit.blade.php
+│
+├── routes/
+│   ├── web.php
+│   └── console.php
+│
+├── storage/
+│   └── app/
+│       └── public/
+│           └── bukti/
+│
+├── tests/
+│   ├── Feature/
+│   └── Unit/
+│
+├── .env
+├── artisan
+├── composer.json
+└── package.json
